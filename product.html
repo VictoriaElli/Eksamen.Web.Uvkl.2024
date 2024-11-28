@@ -8,7 +8,7 @@
         <link href="ikoner/css/brands.css" rel="stylesheet">
         <link href="ikoner/css/solid.css" rel="stylesheet">
         <link rel= "stylesheet" href="#">
-        <title>Mal</title>
+        <title>Produkter</title>
 
     </head>
     <body>
@@ -25,13 +25,13 @@
                         <a href="index.html">Hjem</a>
                     </li>
                     <li>
-                        <a href="#">Produkter</a>
+                        <a href="index.html#product">Produkter</a>
                     </li>
                     <li>
                         <a href="index.html" class="logo"><img src="https://picsum.photos/id/40/100/100" alt="logo"></a>
                     </li>
                     <li>
-                        <a href="#">Kategorier</a>
+                        <a href="index.html#category">Kategorier</a>
                     </li>
                     <li>
                         <a href="#kontaktinformasjon">Kontakt oss</a>
@@ -51,64 +51,109 @@
                 <ul itemscope itemtype="https://schema.org/Breadcrumblist">
                     <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
                         <a href="index.html" itemprop="item"> 
-                            <span itemprop="name">Home /</span>
+                            <span itemprop="name">Hjem /</span>
                             <meta itemprop="position" content="1">
                         </a>
                     </li>
                     <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-                        <a href="index.html" itemprop="item"> 
-                            <span itemprop="name">Running shoes</span> / 
+                        <a href="index.html#category" itemprop="item"> 
+                            <span itemprop="name">Kategori</span> / 
                             <meta itemprop="position" content="1">
                         </a>
                     </li>
                     <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
-                        <a href="index.html" itemprop="item">
-                            <span itemprop="name">Pink runners</span>
+                        <a href="product.html" itemprop="item">
+                            <span itemprop="name">Produktnavn</span>
                             <meta itemprop="position" content="1">
                         </a>
                     </li>
                 </ul>
             </nav>
+            <section class="" itemscope itemtype="https://schema.org/ImageGallery">
+                <img src="img/pink-shoes.jpeg" alt="Rosa joggesko fra merket Shosies" id="active-img" itemprop="primaryImageOfPage">
+                <img src="img/pink-shoes.jpeg" alt="Rosa joggesko fra merket Shosies" itemprop="image">
+                <img src="img/pink-shoes.jpeg" alt="Rosa joggesko fra merket Shosies"itemprop="image">
+                <img src="img/pink-shoes.jpeg" alt="Rosa joggesko fra merket Shosies"itemprop="image">
+            </section>
+            <section class="" itemscope itemtype="https://schema.org/Product">
+                <header id="product-header">
+                    <h1 itemprop="name">Pink runners</h1>
+                    <h3 id="brand-name">
+                        <a href="#" itemprop="brand">Shosies</a>
+                    </h3>
+                </header>
+                <section>
+                    <ul>
+                        <li>100 anmeldelser</li>
+                        <li itemprop="aggregateRating" itemscope itemtype="https://schema.org/AggregateRating">
+                            4.4/5
+                            <meta itemprop="reviewCount" content="89" />
+                            <meta itemprop="ratingValue" content="4.4" />
+                        </li>
+                        <li>Pris: 1499,00 kr</li>
+                    </ul>
+                </section>
+                <section>
+                    <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati</p>
+                    <form>
+                        <label for="Farger">Farge:</label>
+                        <select name="Farger" id="farger">
+                            <option value="">Rosa</option>
+                            <option value="">Grønn</option>
+                            <option value="">Blå</option>
+                            <option value="">Lilla</option>
+                            <option value="">Svart</option>
+                            <option value="">Beige</option>
+                        </select>
+                        <button>Add to cart</button>
+                    </form>
+                </section>
+            </section>
 
-            <aside>
-                
-            </aside>
-            
         </main>
 
+        <aside>
+                
+        </aside>
+
+       
         <footer>
             <section> 
-                <a href=""></a>
-                <p>Logo</p>
+                
+                <a href="">logo</a>
+                <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium </p>
             </section>
             
-            <section id="kotaktinformasjon">
-                <h3>Kontakt oss</h3>
-                <p> Kontakt meg på epost: <a href="vielling@hiof.no"> vielling@hiof.no </a></p>
-                <p> 2024 Victoria Ellingsen</p>
+            <section id="kontaktinformasjon">
+                <h3>Kontakt</h3>
+                <ul>
+                    <li><a><i class="fa-solid fa-map-location"></i> Adresse B R A Veien 4, 1757 Halden </a></li>
+                    <li><a><i class="fa-solid fa-square-phone"></i> Telefon 69 60 80 00</a></li>
+                    <li><a><i class="fa-solid fa-envelope"></i> E-post halden@hiof.no</a></li>
+                    <li><a><i class="fa-solid fa-clock"></i> Åpningstider : Alle dager 08.00 - 15.30</a></li>
+                </ul>
             </section>
 
             <section >
                 <h3>Snarveier</h3>
                 <ul>
-                    <li><a href="">Produkter</a></li>
-                    <li><a href="">Kategorier</a></li>
-                    <li><a href="">Kontakt oss</a></li>
+                    <li><a href="index.html#product">Produkter</a></li>
+                    <li><a href="index.html#category">Kategorier</a></li>
+                    <li><a href="#kontaktinformasjon">Kontakt oss</a></li>
                 </ul>
             </section>
 
             <section> 
                 <h3>Sosiale Medier</h3>
                 <ul>
-                    <li><a href="https://www.facebook.com"><i class="fa-brands fa-square-facebook"></i></a></li>
-                    <li><a href="https://www.pinterest.com"><i class="fa-brands fa-square-pinterest"></i></a></li>
-                    <li><a href="https://www.instagram.com"><i class="fa-brands fa-square-instagram"></i></a></li>
-                    <li><a href="https://www.linkedin.com/?trk=Officekey"><i class="fa-brands fa-linkedin"></i></a></li>
+                    <li><a href="https://www.facebook.com"><i class="fa-brands fa-square-facebook"></i>facebook</a></li>
+                    <li><a href="https://www.pinterest.com"><i class="fa-brands fa-square-pinterest"></i>pinterest</a></li>
+                    <li><a href="https://www.instagram.com"><i class="fa-brands fa-square-instagram"></i>instagram</a></li>
+                    <li><a href="https://www.linkedin.com/?trk=Officekey"><i class="fa-brands fa-linkedin"></i>linkedin</a></li>
                 </ul>
                 <a href="">Hopp til toppen</a>
             </section>
         </footer>
-
     </body>
 
 </html>
